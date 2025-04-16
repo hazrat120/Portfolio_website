@@ -2,7 +2,8 @@
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
-require '../vendor/autoload.php'; // Make sure path is correct
+// Load Composer's autoloader
+require '../vendor/autoload.php'; // Adjust path as needed
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $name    = htmlspecialchars($_POST['name']);
@@ -12,22 +13,21 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail = new PHPMailer(true);
 
     try {
-        // SMTP Configuration
+        // SMTP Settings
         $mail->isSMTP();
-        $mail->Host       = 'smtp.gmail.com';
+        $mail->Host       = 'smtp.hostinger.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'hazratali.webdev@gmail.com';  // Your Gmail
-        $mail->Password   = 'qqoo vbcr juig jhob';         // App Password (never your Gmail password)
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-        $mail->Port       = 587;
+        $mail->Username   = 'iqbal.hossan@bornil.shop';        // Your Hostinger email
+        $mail->Password   = 'bornil@Iqubal@20';                // Email password
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;       // Use SSL
+        $mail->Port       = 465;                                // SSL port
 
-        // Sender & Receiver
-        $mail->setFrom('hazratali.webdev@gmail.com', 'Portfolio Website'); // safer to use your own email as sender
-        $mail->addReplyTo($email, $name); // reply goes to user
-        $mail->addAddress('hazratali.webdev@gmail.com'); // Receiver (your email)
+        // Recipients
+        $mail->setFrom('iqbal.hossan@bornil.shop', 'Portfolio Contact Form');
+        $mail->addAddress('hazratali.webdev@gmail.com'); // Where you want to receive messages
 
-        // Message Content
-        $mail->isHTML(false);
+        // Content
+        $mail->isHTML(false); // Set to true if you want to allow HTML in email body
         $mail->Subject = "New Contact Message from $name";
         $mail->Body    = "Name: $name\nEmail: $email\n\nMessage:\n$message";
 
