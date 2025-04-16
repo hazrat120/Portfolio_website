@@ -44,8 +44,8 @@
     Theme Fonts
 ==========================================*/
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
-@import url('https://fonts.googleapis.com/css?family=Lora:400,400i');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i");
 
 /*==========================================
     Include All Css File
@@ -53,44 +53,46 @@
 
 /*--=== Reset Css ===-*/
 
-@import url('css/normalize.css');
+@import url("css/normalize.css");
 
 /*--=== Skillsbar ===-*/
 
-@import url('css/plugins/skills.css');
+@import url("css/plugins/skills.css");
 
 /*--=== Timeline ===-*/
 
-@import url('css/plugins/timeline.css');
+@import url("css/plugins/timeline.css");
 
 /*--=== Animate ===-*/
 
-@import url('css/plugins/animate.css');
+@import url("css/plugins/animate.css");
 
 /*--=== Hover Animation ===-*/
 
-@import url('css/plugins/hover-min.css');
+@import url("css/plugins/hover-min.css");
 
 /*--=== Fontawesome icon ===-*/
 
-@import url('css/font-awesome.min.css');
+@import url("css/font-awesome.min.css");
 
 /*--=== Owl carousel ===-*/
 
-@import url('css/plugins/owl.carousel.min.css');
+@import url("css/plugins/owl.carousel.min.css");
 
 /*--=== Magnific PopUp ===-*/
 
-@import url('css/plugins/magnific-popup.css');
+@import url("css/plugins/magnific-popup.css");
 
 /*--=== Bootstrap ===-*/
 
-@import url('css/bootstrap.min.css');
+@import url("css/bootstrap.min.css");
 
 /*--=== Author Custom Css ===-*/
 
-@import url('css/main.css');
+@import url("css/main.css");
 
 /*--=== Responsive Css ===-*/
 
-@import url('css/responsive.css');
+@import url("css/responsive.css");
+
+/* ====== Utils styled ======= */
